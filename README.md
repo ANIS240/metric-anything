@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[Paper]() | [Project Page]()
+[Paper]() | [Project Page](https://metric-anything.github.io/metric-anything-io/)
 
 <p align="center">
   <a href="https://mabaorui.github.io/">Baorui Ma †*</a> •
