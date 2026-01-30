@@ -1,8 +1,21 @@
-# Metric Anything: Scaling Depth Pretraining with Noisy Heterogeneous Sources
+# MetricAnything: Scaling Depth Pretraining with Noisy Heterogeneous Sources
 
 <div align="center">
 
 [Paper]() | [Project Page]()
+
+<p align="center">
+  <a href="https://mabaorui.github.io/">Baorui Ma †*</a> •
+  <a href="">Jiahui Yang *</a> •
+  <a href="https://scholar.google.com/citations?user=L8tcNioAAAAJ&hl=en">Donglin Di ‡</a> •
+  <a href="https://scholar.google.com/citations?user=gGAoxSAAAAAJ&hl=en">Xuancheng Zhang</a> •
+  <a href="">Jianxun Cui</a> •
+  <a href="">Hao Li</a> •
+  <a href="">Xie Yan</a> •
+  <a href="">Wei Chen</a> <br>
+  † Corresponding author | * Equal contribution | ‡ Project leader
+</p>
+
 
 </div>
 
@@ -23,16 +36,30 @@
 3. **Prompt-Free Distillation**: Distill the pretrained model into a prompt-free student that achieves SOTA performance on monocular depth estimation without requiring prompts.
 
 
-## Code
+## Release plan
+We will follow the open-source plan below in the coming weeks:
+<details open>
+<summary><b>Pre-trained checkpoints</b> </summary>
 
-- [ ] Release code
+- [ ] Prompt-Based Metric Depth Map Model
+- [ ] Prompt-Free Metric Point Map Model
+- [ ] Prompt-Free Metric Depth Map Model
+</details>
+
+<details open>
+<summary><b>Inference Code</b> </summary>
+
+- [ ] Inference scripts and demo
+
+</details>
+
 
 ## Citation
 
 ```bibtex
-@article{metricanything2025,
-  title={Metric Anything: Scaling Depth Pretraining with Noisy Heterogeneous Sources},
-  author={Metric Anything Team},
+@article{metricanything2026,
+  title={MetricAnything: Scaling Metric Depth Pretraining with Noisy Heterogeneous Sources},
+  author={Baorui Ma, Jiahui Yang, Donglin Di, Xuancheng Zhang, Jianxun Cui, Hao Li, Xie Yan and Wei Chen},
   journal={arXiv preprint},
   year={2026}
 }
